@@ -1,0 +1,58 @@
+name: New Encounter
+description: File a new encounter
+title: "[Encounter]: "
+labels: ["encounter"]
+body:
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: When did the encounter happen?
+      placeholder: ex. 18/02/2024
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Can you provide us with a 
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+      render: Markdown
+    validations:
+      required: true
+  - type: dropdown
+    id: rating
+    attributes:
+      label: Rating
+      description: Choose rating
+      options:
+        - Urgent improvement is required (0)
+        -	Major improvement is necessary (1)
+        - Some improvement is necessary (2)
+        - Generally satisfactory (3)
+        - Standards are good (4)
+        - Standards are very good (5)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Can you provide additional information 
+      description:
+    validations:
+      required: true
+  - type: textarea
+    id: related-entities
+    attributes:
+      label: Can you provide any other related entities 
+      description: 
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
