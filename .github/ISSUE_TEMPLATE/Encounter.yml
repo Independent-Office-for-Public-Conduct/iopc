@@ -15,7 +15,7 @@ body:
     id: description
     attributes:
       label: What happened?
-      description: Can you provide us with a 
+      description: Can you provide us with a
       placeholder: Tell us what you see!
       value: "A bug happened!"
       render: Markdown
@@ -28,7 +28,7 @@ body:
       description: Choose rating
       options:
         - "Urgent improvement is required (0)"
-        -	"Major improvement is necessary (1)"
+        - "Major improvement is necessary (1)"
         - "Some improvement is necessary (2)"
         - "Generally satisfactory (3)"
         - "Standards are good (4)"
