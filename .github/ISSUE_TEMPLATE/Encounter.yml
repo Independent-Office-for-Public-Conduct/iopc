@@ -39,15 +39,13 @@ body:
   - type: textarea
     id: additional-information
     attributes:
-      label: Can you provide additional information 
-      description:
+      label: Can you provide additional information
     validations:
       required: true
   - type: textarea
     id: related-entities
     attributes:
-      label: Can you provide any other related entities 
-      description: 
+      label: Can you provide any other related entities
   - type: checkboxes
     id: terms
     attributes:
