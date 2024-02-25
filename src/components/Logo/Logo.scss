@@ -1,0 +1,11 @@
+.logo {
+    .vertical-bar {
+
+        border-left: 3px solid #3772ff;
+        width: 3px;
+    }
+
+    span:not(.vertical-bar) {
+        display: block;
+    }
+}
