@@ -14,6 +14,8 @@ export const Routes = () => {
 	//   const auth = useAuth();
 	const commonRoutes: RouteObject[] = [{ path: "/", element: <Landing /> }];
 	// //   const routes = auth.user ? protectedRoutes : publicRoutes;
-	const browserRouter = createBrowserRouter([...commonRoutes]);
+	const browserRouter = createBrowserRouter([...commonRoutes], {
+		basename: "/iopc",
+	});
 	return <RouterProvider router={browserRouter} />;
 };
